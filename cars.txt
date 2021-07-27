@@ -1,0 +1,22 @@
+
+name: usedCars
+
+
+Column          Type                Attributes                      Index
+
+id              BIGINT UNSIGNED     AUTO_INCREMENT, NOT NULL        PRIMARY KEY
+model/name      VARCHAR(255)        NOT NULL                        INDEX
+manufacturer    VARCHAR(50)         NOT NULL
+licensePlate    VARCHAR(7)          NOT NULL, UNIQUE                INDEX
+condition       TEXT                NOT NULL
+price           MEDIUMINT UNSIGNED  NOT NULL
+productionStart YEAR                NOT NULL
+productionEnd   YEAR                NULL
+class           VARCHAR(50)         NULL
+bodyStyle       VARCHAR(255)        NULL
+wheelbase       SMALLINT UNSIGNED   NULL
+length          SMALLINT UNSIGNED   NULL
+width           SMALLINT UNSIGNED   NULL
+height          SMALLINT UNSIGNED   NULL
+curbWeight      SMALLINT UNSIGNED   NULL
+enginePower     SMALLINT UNSIGNED   NULL     
